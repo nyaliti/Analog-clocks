@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#This program will show an analog clock with the developer's name
+
+while true
+do
+  #Clear the screen
+  clear
+
+  #Set the hours and minutes
+  hours=$(date +%I)
+  minutes=$(date +%M)
+
+  #Draw the clock
+  echo "*----------------------------------------*"
+  echo "|          _____           _____         |"
+  echo "|         |     |         |     |        |"
+  echo "|         |  .  |         |  .  |        |"
+  echo "|         |  .  |         |  .  |        |"
+  echo "|         |_____|         |_____|        |"
+  echo "|                                        |"
+  echo "|    _____     _____     _____           |"
+  echo "|   |     |   |     |   |     |          |"
+  echo "|   |  $hours  |  $minutes  |  $hours  |          |"
+  echo "|   |_____|   |_____|   |_____|          |"
+  echo "|                                        |"
+  echo "|           Developed by Bryson Omullo   |"
+  echo "*----------------------------------------*"
+
+  #Sleep for 1 minute
+  sleep 1m
+
+done
+
+exit 0
+
+### End of Script
